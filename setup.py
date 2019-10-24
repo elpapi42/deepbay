@@ -17,9 +17,7 @@ setuptools.setup(
 	download_url = "https://github.com/ElPapi42/DeepBay/archive/" + version + ".tar.gz",
 	keywords = ['Keras', 'Model', 'Plug And Play', "Tensorflow"],
 	packages=setuptools.find_packages(),
-	install_requires=[
-		"tensorflow-gpu"
-	],
+	install_requires=[],
 	classifiers=[
 		"Programming Language :: Python :: 3",
 		"License :: OSI Approved :: MIT License",
