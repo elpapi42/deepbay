@@ -26,5 +26,3 @@ class DeepFeedForward(tf.keras.Model):
     for layer in self.block_list:
       X = layer(X)
     return X
-
-a = DeepFeedForward([1])
