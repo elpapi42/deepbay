@@ -3,7 +3,7 @@ import setuptools
 with open("README.md", "r") as fh:
 	long_description = fh.read()
 
-version="v0.2"
+version="v0.3"
 
 setuptools.setup(
 	name="deepbay",
