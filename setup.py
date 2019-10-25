@@ -4,6 +4,7 @@ with open("README.md", "r") as fh:
 	long_description = fh.read()
 
 version="v0.4"
+print("\nPackages: " + str(setuptools.find_packages()) + "\n")
 
 setuptools.setup(
 	name="deepbay",

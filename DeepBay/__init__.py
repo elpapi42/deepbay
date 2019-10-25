@@ -1,4 +1,4 @@
-from DeepBay.DenseBlock import DenseBlock
-from DeepBay.DeepFeedForward import DeepFeedForward
-from DeepBay.GeneralizedMatrixFactorizer import GeneralizedMatrixFactorizer
-from DeepBay.NeuralCollaborativeFilter import NeuralCollaborativeFilter
+import DeepBay.DenseBlock
+import DeepBay.DeepFeedForward
+import DeepBay.GeneralizedMatrixFactorizer
+import DeepBay.NeuralCollaborativeFilter
