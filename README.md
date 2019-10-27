@@ -6,6 +6,8 @@ The purpose of the repo is to compile Deep Learning Architectures created using 
 
 You can use pip for install this from PyPi, just use:
 
-!pip install deepbay
+```
+pip install deepbay
+```
 
-https://pypi.org/project/deepbay/
+https://pypi.org/project/deepbay
