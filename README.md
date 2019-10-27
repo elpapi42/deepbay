@@ -4,7 +4,7 @@ The purpose of the repo is to compile Deep Learning Architectures created using 
 
 ## Installation
 
-You can use pip for install this from PyPi just use:
+You can use pip for install this from PyPi, just use:
 
 !pip install deepbay
 
