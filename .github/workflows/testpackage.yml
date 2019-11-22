@@ -29,9 +29,9 @@ jobs:
       uses: actions/cache@v1.0.3
       with:
         # A directory to store and save the cache
-        path: python_packages_cache
+        path: .github/packages_cache/
         # An explicit key for restoring and saving the cache
-        key: ${{ runner.os }}-cache
+        key: ${{ runner.os }}-deepbay
         
     - name: Install dependencies
       run: |
