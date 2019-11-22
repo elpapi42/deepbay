@@ -28,7 +28,7 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip install virtualenv
         python -m venv env
-        .\env\Scripts\activate
+        source env/bin/activate
         pip install -r requirements.txt
     - name: Lint with flake8
       run: |
@@ -39,6 +39,6 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        .\env\Scripts\activate
+        source env/bin/activate
         pip install pytest
         pytest
