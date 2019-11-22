@@ -31,7 +31,7 @@ jobs:
         # A directory to store and save the cache
         path: .github/packages_cache/
         # An explicit key for restoring and saving the cache
-        key: ${{ runner.os }}-cache
+        key: ${{ runner.os }}-deepbay
         
     - name: Install dependencies
       run: |
