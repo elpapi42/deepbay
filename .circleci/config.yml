@@ -1,29 +1,28 @@
- version: 2
- jobs:
+version: 2
+jobs:
     build:  # required for runs that don't use workflows
-      	working_directory: ~/tests
-		docker:
-			image: circleci/python:3.6.8
-			environment:
-			PIPENV_VENV_IN_PROJECT: true
-
-		steps:
-			checkout
-			run:
-				command:
-					sudo pip install pipenv
-					pipenv install tensorflow-gpu
-					pipenv install numpy
-					pipenv install pytest
-					pipenv pytest
-			save_cache:
-				key: deps9-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
-				paths:
-					".venv"
-					"/usr/local/bin"
-					"/usr/local/lib/python3.6/site-packages"
-			store_test_results:
-				path: test-results
-			store_artifacts:
-				path: test-results
-				destination: tr1
+        working_directory: ~/tests
+        docker:
+            image: circleci/python:3.6.8
+            environment:
+                PIPENV_VENV_IN_PROJECT: true
+        steps:
+            checkout
+            run:
+                command:
+                    sudo pip install pipenv
+                    pipenv install tensorflow-gpu
+                    pipenv install numpy
+                    pipenv install pytest
+                    pipenv pytest
+            save_cache:
+                key: deps9-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
+                paths:
+                    ".venv"
+                    "/usr/local/bin"
+                    "/usr/local/lib/python3.6/site-packages"
+            store_test_results:
+                path: test-results
+            store_artifacts:
+                path: test-results
+                destination: tr1
