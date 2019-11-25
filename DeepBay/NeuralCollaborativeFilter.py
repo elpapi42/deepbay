@@ -1,6 +1,7 @@
 import tensorflow as tf
-from DeepBay.DenseBlock import DenseBlock
-from DeepBay.DeepFeedForward import DeepFeedForward
+
+from deepbay import DenseBlock
+from deepbay import DeepFeedForward
 
 class NeuralCollaborativeFilter(tf.keras.Model):
     """

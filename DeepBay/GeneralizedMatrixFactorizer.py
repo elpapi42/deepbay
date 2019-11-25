@@ -1,5 +1,6 @@
 import tensorflow as tf
-from DeepBay.DenseBlock import DenseBlock
+
+from deepbay import DenseBlock
 
 class GeneralizedMatrixFactorizer(tf.keras.Model):
     """

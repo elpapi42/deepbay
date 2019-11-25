@@ -35,7 +35,7 @@ class DenseBlock(tf.keras.Model):
                                             kernel_regularizer=tf.keras.regularizers.L1L2(l2=l2), 
                                             kernel_constraint=tf.keras.constraints.UnitNorm())
       
-    def call(self, inputs):
+    def call(self, inputs, training=False):
         """
         Call Model Feed Forward Run
         
@@ -46,10 +46,11 @@ class DenseBlock(tf.keras.Model):
             Rank-2 Tensor of shape [Batch_Size, units]
 
         """
+        X = inputs
 
         if(self.use_batch_norm):
-            X = self.bn(inputs)
+            X = self.bn(X, training=training)
             
-        X = self.drop(X)
-        X = self.dense(X)
+        X = self.drop(X, training=training)
+        X = self.dense(inputs)
         return X
