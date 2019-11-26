@@ -1,4 +1,8 @@
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![CI Status](https://github.com/ElPapi42/DeepBay/workflows/Test%20Package/badge.svg?branch=development?event=pull_request)](https://github.com/ElPapi42/DeepBay/actions?query=workflow%3A%22Test+Package%22)
+[![Release](https://img.shields.io/github/release/ElPapi42/DeepBay/all.svg)](https://github.com/ElPapi42/DeepBay/releases)
+[![Last Commit](https://badgen.net/github/last-commit/ElPapi42/DeepBay)](https://github.com/ElPapi42/DeepBay/graphs/commit-activity)
+
 
 # DeepBay
 
