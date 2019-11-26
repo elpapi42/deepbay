@@ -1,6 +1,6 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![Development Status](https://github.com/ElPapi42/DeepBay/workflows/build/badge.svg?branch=development)](https://github.com/ElPapi42/DeepBay/actions?query=workflow%3A%22Test+Package%22)
-[![Release](https://badgen.net/github/release/ElPapi42/DeepBay)](https://github.com/ElPapi42/DeepBay/releases)
+[![GitHub version](https://badge.fury.io/gh/Elpapi42%2FDeepBay.svg)](https://badge.fury.io/gh/Elpapi42%2FDeepBay)
 [![Last Commit](https://badgen.net/github/last-commit/ElPapi42/DeepBay)](https://github.com/ElPapi42/DeepBay/graphs/commit-activity)
 
 
