@@ -16,4 +16,9 @@ You can use pip for install this from PyPi, just use:
 pip install deepbay
 ```
 
-https://pypi.org/project/deepbay
+## Quick Start
+
+```python
+import deepbay
+denseblock = deepbay.DenseBlock(units=1)
+```
