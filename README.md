@@ -5,7 +5,6 @@
 
 
 # DeepBay
-
 This project was created with the objective of compile Machine Learning Architectures created using Tensorflow or Keras. The architectures must be provided as a ready-to-use Plug-and-Play module that can be easily integrated into any existing project or architecture design
 
 ## Installation
@@ -22,7 +21,11 @@ import deepbay
 
 denseblock = deepbay.DenseBlock(units=1)
 ```
-Or you can integrate it to an existing architecture, just:
+Or you can integrate it to any existing architecture, just:
 ```python
-model = tf.keras.models.Sequential(denseblock)
+import tensorflow as tf
+import deepbay
+
+model = tf.keras.models.Sequential()
+model.add(deepbay.DenseBlock(units=1))
 ```
