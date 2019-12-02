@@ -9,16 +9,20 @@
 This project was created with the objective of compile Machine Learning Architectures created using Tensorflow or Keras. The architectures must be provided as a ready-to-use Plug-and-Play module that can be easily integrated into any existing project or architecture design
 
 ## Installation
-
-You can use pip for install this from PyPi, just use:
-
+You can use pip for install this from PyPi:
 ```
 pip install deepbay
 ```
 
 ## Quick Start
-
+You can use any architecture inside deepbay as an self-contained model ready to be trained
 ```python
+import tensorflow as tf
 import deepbay
+
 denseblock = deepbay.DenseBlock(units=1)
+```
+Or you can integrate it to an existing architecture, just:
+```python
+model = tf.keras.models.Sequential(denseblock)
 ```
