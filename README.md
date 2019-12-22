@@ -29,3 +29,4 @@ import deepbay
 model = tf.keras.models.Sequential()
 model.add(deepbay.DenseBlock(units=1))
 ```
+Keep an eye on input/output shapes, you can found them in the class documentation inside every module
